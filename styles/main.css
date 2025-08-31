@@ -52,6 +52,14 @@ h1 {
 	color: #c3c1e5;
 }
 
+.input-field:hover {
+	box-shadow: 0px 0px 4px 0px var(--purple-color);
+}
+
+.input-field:focus-visible {
+	outline: 2px solid rgb(108 99 255 / 0.4);
+}
+
 .filter-dropdown {
 	padding: 10px;
 	font-size: 18px;
@@ -61,6 +69,11 @@ h1 {
 	background-color: var(--purple-color);
 	border-radius: var(--border-radius);
 	border: none;
+	outline: none;
+}
+
+.filter-dropdown:hover {
+	box-shadow: 0px 0px 4px 0px var(--purple-color);
 }
 
 .change-theme-btn {
@@ -78,12 +91,7 @@ h1 {
 	fill: currentColor;
 }
 
-input:focus-visible,
-button:focus-visible {
-	outline: 2px solid rgb(108 99 255 / 0.4);
-}
-
-select:focus-visible {
-	outline: none;
+.change-theme-btn:hover {
+	background-color: #5850dd;
 	box-shadow: 0px 0px 4px 0px var(--purple-color);
 }
