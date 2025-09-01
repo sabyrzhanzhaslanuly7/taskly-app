@@ -57,7 +57,6 @@ h1 {
 }
 
 .input-field:focus-visible,
-.select:focus-visible,
 .change-theme-btn:focus-visible {
 	outline: 2px solid rgb(108 99 255 / 0.4);
 }
@@ -66,18 +65,20 @@ h1 {
 	position: relative;
 	min-width: 100px;
 	transition-duration: 0.3s;
-	border-radius: 6px;
-	outline-offset: -2px;
+	border-radius: 7px;
 }
 
 .select:focus {
-	outline-offset: 0;
 	outline: 2px solid var(--purple-color);
+}
+
+.select:focus-visible {
+	outline: 2px solid rgb(108 99 255 / 0.4);
+	border-radius: var(--border-radius);
 }
 
 .select.is-active .select__body {
 	display: block;
-	margin-top: 2px;
 }
 
 .select__header {
@@ -91,8 +92,8 @@ h1 {
 	color: var(--white-color);
 	border-radius: var(--border-radius);
 	background-color: var(--purple-color);
-	cursor: pointer;
 	transition-duration: 0.3s;
+	cursor: pointer;
 }
 
 .select__header:hover {
@@ -138,6 +139,7 @@ h1 {
 .select__item {
 	width: 100%;
 	padding: 8px;
+	font-weight: 400;
 	font-size: 16px;
 	cursor: pointer;
 }

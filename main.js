@@ -21,6 +21,14 @@ let select = function () {
 		currentText.innerText = text
 		select.classList.remove('is-active')
 	}
+
+	document.addEventListener('click', function (e) {
+		document.querySelectorAll('.select').forEach((select) => {
+			if (!select.contains(e.target)) {
+				select.classList.remove('is-active')
+			}
+		})
+	})
 }
 
 select()
