@@ -100,6 +100,23 @@ input[type='search']::-webkit-search-results-decoration {
 	display: none;
 }
 
+/* Сброс стандартного оформления чекбокса */
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	appearance: none;
+	/* базовые стили для кастомного оформления */
+}
+
+/* Стили для состояния "отмечено" */
+input[type='checkbox']:checked {
+	/* стили для выбранного состояния */
+}
+
+/* Стили для состояния "отключено" */
+input[type='checkbox']:disabled {
+	/* стили для отключённого состояния */
+}
+
 html {
 	/**
     Пригодится в большинстве ситуаций
@@ -147,14 +164,19 @@ label {
 	cursor: pointer;
 }
 
+button {
+	border: none;
+	background-color: transparent;
+}
+
 /**
   Приводим к единому цвету svg-элементы
   (за исключением тех, у которых уже указан
   атрибут fill со значением 'none' или начинается с 'url')
  */
-:where([fill]:not([fill='none'], [fill^='url'])) {
+/* :where([fill]:not([fill='none'], [fill^='url'])) {
 	fill: currentColor;
-}
+} */
 
 /**
   Приводим к единому цвету svg-элементы

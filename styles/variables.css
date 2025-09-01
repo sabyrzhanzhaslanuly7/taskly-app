@@ -1,8 +1,11 @@
 :root {
 	--purple-color: #6c63ff;
-	--dark-purple-color: #534CC2;
+	--dark-purple-color: #534cc2;
 	--white-color: #f7f7f7;
 	--black-color: #252525;
+	--gray-color: #cdcdcd;
+	--gray-op-color: rgb(37 37 37 / 0.5);
+	--red-color: #e50000;
 
 	--border-radius: 5px;
 }
