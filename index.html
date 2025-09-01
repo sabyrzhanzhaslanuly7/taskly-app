@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="./styles/normalize.css" />
 		<link rel="stylesheet" href="./styles/main.css" />
 		<link rel="icon" href="./favicon.png" type="image/png" />
+		<script src="./main.js" defer></script>
 		<title>Taskly</title>
 	</head>
 	<body>
@@ -24,11 +25,41 @@
 						type="search"
 						placeholder="Search note..."
 					/>
-					<select name="filter-dropdown" class="filter-dropdown" id="filter">
-						<option value="all">all</option>
-						<option value="complete">complete</option>
-						<option value="incomplete">incomplete</option>
-					</select>
+
+					<div class="select is-active" tabindex="0">
+						<div class="select__header">
+							<span class="select__current">all</span>
+							<div class="select__icon">
+								<svg
+									width="9"
+									height="5"
+									viewBox="0 0 9 5"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M4.63077 4L1.26154 1"
+										stroke="#F7F7F7"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M8 1L4.63077 4"
+										stroke="#F7F7F7"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+						</div>
+
+						<div class="select__body">
+							<div class="select__item">All</div>
+							<div class="select__item">Complete</div>
+							<div class="select__item">Incomplete</div>
+						</div>
+					</div>
+
 					<button class="change-theme-btn" type="button">
 						<svg
 							width="22"
